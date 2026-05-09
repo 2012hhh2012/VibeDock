@@ -295,6 +295,7 @@ class SettingsWindow(QMainWindow):
         self.btnDashboard.clicked.connect(lambda: opendashboard(self))
         self.btnProfiles.clicked.connect(lambda: openprofiles(self))
         self.btnSideSignOut.clicked.connect(lambda: signout(self))
+        self.btnSignOut.clicked.connect(lambda: signout(self))  
         self.btnDeleteAccount.clicked.connect(self.deleteAccount)
         self.btnAccountSave.clicked.connect(self.saveAccountCredentials)
 
