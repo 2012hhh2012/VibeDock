@@ -351,7 +351,7 @@ class SettingsWindow(QMainWindow):
 
 class UserManager:
     def __init__(self, filename="users-data.json"):
-        self.filename = filename
+        self.filename = resource_path(filename)
         self.users = []  # Array to store multiple users
         self.current_user = None
         self.load_users()
